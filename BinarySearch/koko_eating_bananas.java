@@ -24,7 +24,7 @@ class Solution {
         long totalHours = 0;
         for (int i=0;i<piles.length;i++) {
             // Use ceiling: (bananas + speed - 1) / speed
-            totalHours += (piles[i] + speed - 1) / speed;
+             totalHours += Math.ceil((double) piles[i] / speed);
         }
         return totalHours;
     }
